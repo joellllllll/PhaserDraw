@@ -34,7 +34,8 @@ module MyGame {
 			var graphics = this.game.add.graphics(300, 200);
 
 			// diese Funktionen zum Zeichnen von Linien kommen von Phaser
-			// und sollen nicht verwendet werden.
+			// und sollen nicht verwendet werden. Als Übung kannst du damit
+			// aber mal das Haus-vom-Nikolaus zeichnen.
 			graphics.lineStyle(1, 0xff0000, 1);
 			graphics.moveTo(0, 0);
 			graphics.lineTo(100, 0);
@@ -51,7 +52,7 @@ module MyGame {
 			graphics.moveTo(0, 100);
 			graphics.lineTo(0, 0);
 
-			// so ruft man die Funtion auf.
+			// so ruft man die Funktion auf, die einen Pixel zeichnet, siehe unten.
 			this.drawPixel(50, 50, graphics);
 
 			// so soll dann die Funktion drawLine aufgerufen werden können
