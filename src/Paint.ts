@@ -59,7 +59,24 @@ module MyGame {
 			//this.drawLine(0, 10, 50, 50, graphics)
 
 			// Hier schreibst du den Code, der das Haus-vom-Nikolaus zeichnet.
+	
+			this.drawPixel(100,0,graphics)
+			graphics.lineStyle(1,0x00ff00, 1)
+			graphics.moveTo(50,-50)
+			graphics.lineTo(0, 0)
 
+			graphics.lineStyle(1, 0x00ff00, 1)
+			graphics.moveTo(50,-50)
+			graphics.lineTo(100,0) 	
+
+			graphics.lineStyle(1, 0x00ff00, 1)
+			graphics.moveTo(0,0)
+			graphics.lineTo(100,100)
+
+			graphics.lineStyle(1, 0x00ff00, 1)
+			graphics.moveTo(0, 100)
+			graphics.lineTo(100,0)
+			
 		}
 
 		// Diese Funktion muss noch erstellt werden. Sie soll eine durchgehende Line von der Koordinate
@@ -71,8 +88,12 @@ module MyGame {
 
 		// Zeichnet einen Pixel an der Koordinate (x, y)
 		drawPixel(x: number, y: number, graphics: Phaser.Graphics) {
-			graphics.drawRect(x, y, 1, 1)
+			graphics.drawRect(50,-50,1 ,1)
+
+					
+
+
 		}
 	}
-}
 
+}
